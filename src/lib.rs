@@ -107,7 +107,7 @@ impl SamlReqwest {
 
         let mut post_params = HashMap::new();
 
-        post_params.insert("userNameInput", r#"legal\scottj7"#);
+        post_params.insert("userNameInput", &username);
         post_params.insert("passwordInput", &password);
         // post_params.insert("kmsiInput", "true");
         // post_params.insert("optionForms", "FormsAuthentication");
